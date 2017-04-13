@@ -1,22 +1,22 @@
 
 @import compass
 $babyblue: #35A0FF
-$ff: 'Quicksand'
+$ff: 'Quicksand', sans-serif
 
 // n is number of stars required
 @function multiple-box-shadow ($n) 
-  $value: '#{random()}px #{random(2000)}px #FFF'
+  $value: '#{random()}px #{random(4000)}px #FFF'
   @for $i from 2 through $n
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF'
+    $value: '#{$value} , #{random(4000)}px #{random(4000)}px #FFF'
 
   @return unquote($value)
 
 
 
 
-$shadows-small:  multiple-box-shadow(100)
-$shadows-medium: multiple-box-shadow(200)
-$shadows-big:    multiple-box-shadow(100)
+$shadows-small:  multiple-box-shadow(200)
+$shadows-medium: multiple-box-shadow(300)
+$shadows-big:    multiple-box-shadow(200)
 
 html
   height: 100%
@@ -29,12 +29,11 @@ html
   height: 1px
   background: transparent
   box-shadow: $shadows-small
-  animation			: animStar 60s linear infinite
     
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    top: -2000px
     width: 1px
     height: 1px
     background: transparent
@@ -45,12 +44,11 @@ html
   height: 2px
   background: transparent
   box-shadow: $shadows-medium
-  animation			: animStar 50s linear infinite
     
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    top: -2000px
     width: 2px
     height: 2px
     background: transparent
@@ -61,28 +59,38 @@ html
   height: 3px
   background: transparent
   box-shadow: $shadows-big
-  animation			: animStar 30s linear infinite
-    
+  
   &:after
     content: " "
     position: absolute
-    top: 2000px
+    top: -2000px
     width: 3px
     height: 3px
     background: transparent
     box-shadow: $shadows-big
 
-  
+#rotate
+  animation			: animStar 100s linear infinite
+#rotate2
+  animation			: animStar 100s linear infinite
+#rotate3
+  animation			: animStar 100s linear infinite
+    
 
   
 @keyframes animStar
   from	
-    transform: translateX(0px)
+    transform: scale(1)
+    transform: rotate(0deg)
+    transform-origin: 50% 0%
   to		
-    transform: translateX(-2000px)
-    background: -webkit-linear-gradient(white, #FFFFFF)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    transform: scale(.03)
+    transform: rotate(360deg)
+    
+    //transform-origin: 50% 50%
+    
+
+    
 h1  
   font-family: $ff
   text-align: center
@@ -128,4 +136,5 @@ h2
   font-size: 20px
   margin-top: 50px
   
-  
+  #planet
+    

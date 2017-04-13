@@ -5,12 +5,12 @@ function downloads(){
   
   if(typeof(Storage) !== "undefined") {
         if (localStorage.downloads) {
-           localStorage.downloads = Number(localStorage.downloads)+1
+           localStorage.setItem("downloads", "Thank you for downloading Dyer Utililites")
          
         } else {
-            localStorage.downloads = 1;
+            localStorage.downloads = " ";
         }
-        document.getElementById("count").innerHTML = "Downloads: " + localStorage.downloads;
+        document.getElementById("count").innerHTML = localStorage.downloads;
     } else {
      
     } 
@@ -20,7 +20,7 @@ function downloads(){
 function getDownloads(){
   if(typeof(Storage) !== "undefined") {
     if(localStorage.downloads){
-      document.getElementById("count").innerHTML = "Downloads: " + localStorage.downloads;
+      document.getElementById("count").innerHTML = localStorage.downloads;
     }
   }
 }

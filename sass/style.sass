@@ -1,6 +1,7 @@
 
 @import compass
 $babyblue: #35A0FF
+$ff: 'Quicksand'
 
 // n is number of stars required
 @function multiple-box-shadow ($n) 
@@ -83,6 +84,7 @@ html
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
 h1  
+  font-family: $ff
   text-align: center
   font-size: 50px
   position: fixed
@@ -106,14 +108,24 @@ h1
   
   
 a
+  font-family: $ff
   display:block
   text-align:center
   background: -webkit-linear-gradient(red, orange)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
 
-
-
-    
-
+h2
+  position: absolute
+  background: -webkit-linear-gradient(red, yellow)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  top: 0px
+  right: 16px
+  font-size: 18px
+  font-family: $ff
+  color: white
+  font-size: 20px
+  margin-top: 50px
+  
   

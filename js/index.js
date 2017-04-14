@@ -10,17 +10,17 @@ function downloads(){
         } else {
             localStorage.downloads = " ";
         }
-        document.getElementById("count").innerHTML = localStorage.downloads;
+        document.getElementById("thanks").innerHTML = localStorage.downloads;
     } else {
      
     } 
  
 }
 
-function getDownloads(){
+function getThanks(){
   if(typeof(Storage) !== "undefined") {
     if(localStorage.downloads){
-      document.getElementById("count").innerHTML = localStorage.downloads;
+      document.getElementById("thanks").innerHTML = localStorage.downloads;
     }
   }
 }

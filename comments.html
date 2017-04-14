@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Comment Test</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<?php
+if($_POST){
+  $name = $_POST('name');
+  $comment = $_POST('content');
+
+  $handle = fopen("Comments.html", "a");
+  fwrite($handle, "<b>" . $name . "</b>:<br/>" . $comment . "<br/>");
+  fclose($handle);
+}
+?>
+
+
+<div id="respond">
+
+  <h3>Leave a Comment or Suggestion</h3>
+
+  <form action="" method="Post" id="commentform">
+
+    Comments: <textarea rows = "6" cols = "30" name = "content"></textarea><br/>
+    Name: <input type = "text" name = "name"><br/>
+    Email: <input type = "email" name = "email"><br/>
+    
+    <input type = "submit" value = "Post"><br/>
+  </form>
+  <?php include ""; ?>
+
+</div>
+  
+  
+</body>
+</html>

@@ -1,4 +1,4 @@
-body {
+body{
   background: white;
 }
 
@@ -7,12 +7,14 @@ body {
 }
 
 #respond input[type='text'],
-#respond input[type='email'],
+#respond input[type='email'], 
 #respond textarea {
   background: transparent;
+  
   margin-bottom: 10px;
   display: block;
   width: 100%;
+
   border: 1px solid grey;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -20,14 +22,17 @@ body {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+
   line-height: 1.4em;
 }
 
-.submit {
+.submit{
   background: transparent;
+  
 }
 
-.submit:hover {
+.submit:hover{
+  //box-shadow: 0 5px #666;
   border: solid;
   transform: translateY(2px);
 }

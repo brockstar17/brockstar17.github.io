@@ -4,6 +4,25 @@ html {
 
 p {
   color: teal;
-  font-family: Arial;
-  font-size: 18px;
+  font-size: 120%;
+}
+
+a {
+  color: teal;
+  font-size: 120%;
+}
+
+#cover {
+  display: block;
+  position: absolute;
+  background: skyblue;
+  height: 50%;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+#cover.unhide {
+  position: relative;
+  height: 0;
+  width: 0;
 }

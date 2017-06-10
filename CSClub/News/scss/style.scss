@@ -1,0 +1,14 @@
+html {
+  background: skyblue;
+}
+
+$p-color: teal;
+
+
+
+p {
+  color: $p-color;
+  font-family: Arial;
+  font-size: 18px;
+  
+}

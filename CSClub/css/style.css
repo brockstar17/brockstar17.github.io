@@ -61,9 +61,9 @@ html {
 #news:link {
   font-family: Arial;
   position: relative;
-  background-color: purple;
+  background-color: black;
   top: 10%;
-  color: black;
+  color: skyblue;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
@@ -74,9 +74,9 @@ html {
 #news:hover {
   font-family: Arial;
   position: relative;
-  background-color: magenta;
+  background-color: skyblue;
   top: 10%;
-  color: pink;
+  color: black;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;

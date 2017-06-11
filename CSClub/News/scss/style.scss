@@ -1,6 +1,6 @@
 
 html {
-  background: skyblue;
+  background-image: url("https://static1.squarespace.com/static/53b486b8e4b0c3274b89a565/t/574e0b497c65e430dff57a43/1464732495610/iStock_000005336914Large-adjusted-for-web.jpg?format=1500w");
 }
 
 #contain {
@@ -8,14 +8,9 @@ html {
   right: 5%;
   height: 1300px;
   width: 90%;
-  border: solid teal 5px;
-  transition: all 1s ease;
+  border: solid black 5px;
 }
 
-#contain.show {
-  height: 1400px;
-  transition: all 1s ease;
-}
 
 #parallax1 {
   
@@ -61,7 +56,7 @@ html {
 #Heading {
   height: 60px;
   width: 100%;
-  border: solid teal 1px;
+  border: solid black 1px;
   background: white;
 }
 
@@ -76,7 +71,7 @@ html {
   top: 450px;
   background: white;
   height: 100px;
-  border: solid teal 1px;
+  border: solid black 1px;
   transition: all 1s ease;
 }
 
@@ -85,7 +80,7 @@ html {
   top: 390px;
   background: white;
   height: 150px;
-  border: solid teal 1px;
+  border: solid black 1px;
   transition: all 1s ease;
 }
 
@@ -94,16 +89,16 @@ html {
   top: 600px;
   background: white;
   height: 100px;
-  border: solid teal 1px;
+  border: solid black 1px;
   transition: all 1s ease;
 }
 
 #seg2.show {
   position: relative;
-  top: 600px;
+  top: 500px;
   background: white;
   height: 200px;
-  border: solid teal 1px;
+  border: solid black 1px;
   transition: all 1s ease;
 }
 

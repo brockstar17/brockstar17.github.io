@@ -51,14 +51,12 @@ $('.mem').on('click', function(){
     if(!($(this).hasClass('disp'))){
       $('#member').toggleClass('disp');
       $('#seg2').toggleClass('show');
-      $('#contain').toggleClass('show');
       loadMembers();
     }
   }
   else {
     $('#member').toggleClass('disp');
     $('#seg2').toggleClass('show');
-    $('#contain').toggleClass('show');
     if($('#member').hasClass('disp')){
       loadMembers();
     }

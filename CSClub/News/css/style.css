@@ -2,6 +2,93 @@ html {
   background: skyblue;
 }
 
+#contain {
+  position: absolute;
+  right: 5%;
+  height: 1300px;
+  width: 90%;
+  border: solid teal 5px;
+  transition: all 1s ease;
+}
+
+#contain.show {
+  height: 1400px;
+  transition: all 1s ease;
+}
+
+#parallax1 {
+  /* Set a specific height */
+  height: 600px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://wallup.net/wp-content/uploads/2015/12/242291-nature-landscape-waterfall-forest-fall-sun_rays-trees-tropical-Thailand-colorful-river-red.jpg");
+}
+
+#parallax2 {
+  /* Set a specific height */
+  top: 750px;
+  height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://www.wallpapermade.com/images/wallpapers/originals/big-waterfall-in-the-forest-wallpaper-5149.jpg");
+}
+
+#Heading {
+  height: 60px;
+  width: 100%;
+  border: solid teal 1px;
+  background: white;
+}
+
+#head {
+  text-align: center;
+  position: relative;
+  bottom: 10%;
+}
+
+#seg1 {
+  position: relative;
+  top: 450px;
+  background: white;
+  height: 100px;
+  border: solid teal 1px;
+  transition: all 1s ease;
+}
+
+#seg1.show {
+  position: relative;
+  top: 390px;
+  background: white;
+  height: 150px;
+  border: solid teal 1px;
+  transition: all 1s ease;
+}
+
+#seg2 {
+  position: relative;
+  top: 600px;
+  background: white;
+  height: 100px;
+  border: solid teal 1px;
+  transition: all 1s ease;
+}
+
+#seg2.show {
+  position: relative;
+  top: 600px;
+  background: white;
+  height: 200px;
+  border: solid teal 1px;
+  transition: all 1s ease;
+}
+
 p {
   color: teal;
   font-size: 120%;
@@ -12,17 +99,15 @@ a {
   font-size: 120%;
 }
 
-#cover {
-  display: block;
-  position: absolute;
-  background: skyblue;
-  height: 50%;
-  width: 100%;
-  transition: all 1s ease;
+#announce {
+  position: relative;
+  top: 10%;
 }
 
-#cover.unhide {
-  position: relative;
-  height: 0;
-  width: 0;
+h2.hover {
+  color: green;
+}
+
+#member.disp {
+  color: green;
 }

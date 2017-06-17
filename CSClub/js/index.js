@@ -139,7 +139,7 @@ $('#heading').on('click', function(){
       break;
                    }
   
-  $('#frame').css('background-image', BG0);
+  $('#frame').css('background-image', 'space1.jpg');
   currentTab = "home";
   loadHome();
 });
@@ -167,17 +167,17 @@ $('.dmenu').on('click', function(){
   
   var id = $(this).parent().prop('id');
   if(id == "announce"){
-    $('#frame').css('background-image', BG2);
+    $('#frame').css('background-image', 'space4.jpg');
     currentTab = "announce";
     lAnnounce();
   }
   else if(id == "members"){
-    $('#frame').css('background-image', BG1);
+    $('#frame').css('background-image', 'space2.jpg');
     currentTab = "members";
     lMembers();
   }
   else {
-    $('#frame').css('background-image', BG3);
+    $('#frame').css('background-image', 'space3.jpg');
     currentTab = "events";
     lEvents();
   }

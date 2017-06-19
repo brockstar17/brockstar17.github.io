@@ -55,7 +55,9 @@ html {
 #motto {
   position: relative;
   bottom: 10px;
-  color: white;
+  background: -webkit-linear-gradient(white, gray, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #heading {
@@ -152,7 +154,5 @@ html {
 }
 
 #bio {
-  background: -webkit-linear-gradient(white, gray, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }

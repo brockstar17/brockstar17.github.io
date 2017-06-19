@@ -55,9 +55,7 @@ html {
 #motto {
   position: relative;
   bottom: 10px;
-  background: -webkit-linear-gradient(white, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 #heading {
@@ -111,7 +109,7 @@ html {
   text-align: center;
   margin: 0 auto;
   top: 0px;
-  background: -webkit-linear-gradient(red, black, red);
+  background: -webkit-linear-gradient(red, orange, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 80px;

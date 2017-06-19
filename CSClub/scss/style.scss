@@ -28,20 +28,20 @@ html {
 
 .mailStyle {
   text-decoration: none;
-  background: -webkit-linear-gradient(gold, red);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mailStyle:visited {
   text-decoration: none;
-  background: -webkit-linear-gradient(gold, red);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mailStyle:hover {
-  background: -webkit-linear-gradient(orange, gold, red);
+  background: -webkit-linear-gradient(white, gray, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -60,13 +60,13 @@ html {
 #motto {
   position: relative;
   bottom: 10px;
-  background: -webkit-linear-gradient(gold, red);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #heading {
-  background: -webkit-linear-gradient(gold, red);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -95,13 +95,13 @@ html {
   font-family:Arial;
   font-size: 25px;
   bottom: 2px;
-  background: -webkit-linear-gradient(gold, red);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dmenu.highlight {  
-  background: -webkit-linear-gradient(blue, gold);
+  background: -webkit-linear-gradient(white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -141,7 +141,7 @@ html {
 .slideEvents {
   position: relative;
   background: rgba(0, 0, 0, .7);
-  color: gold;
+  color: white;
   text-align: center;
   vertical-align: middle;
   margin: 0 auto;
@@ -163,7 +163,7 @@ html {
 }
 
 #bio {
-  background: -webkit-linear-gradient(red, orange, gold);
+  background: -webkit-linear-gradient(white, gray, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

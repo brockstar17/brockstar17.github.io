@@ -55,7 +55,7 @@ html {
 #motto {
   position: relative;
   bottom: 10px;
-  background: -webkit-linear-gradient(white, gray);
+  background: -webkit-linear-gradient(white, lightgray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

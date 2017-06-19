@@ -1,4 +1,4 @@
-var names = [ "Alexis Parkins", "Allison Oldakowski", "Ava Walker", "Brock Dyer - Club President", "Celine Aubuchon", "Garrett Sheridan", "Jared Vauteur", "Lukas Anderson", "Nick DeVries", "Thomas Schaeffer"];
+var names = [ "Alexis Parkins", "Loser", "Ava Walker", "Brock Dyer - Club President", "Celine Aubuchon", "Garrett Sheridan", "Jared Vauteur", "Lukas Anderson", "Nick DeVries", "Thomas Schaeffer"];
 
 var BG0 = 'url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg")';
 

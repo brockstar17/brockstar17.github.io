@@ -2,9 +2,9 @@ var names = [ "Alexis Parkins", "Allison Oldakowski", "Ava Walker", "Brock Dyer 
 
 var BG0 = 'url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg")';
 
-var BG1 = 'url("http://wallpapercave.com/wp/tkxqfHn.jpg")';
+var BG1 = 'url("https://scienceblog.ru/wp-content/uploads/d0bad0b2d0b0d0b7d0b0d1801.jpg")';
 
-var BG2 = 'url("http://wallpapercave.com/wp/G48Pm1m.jpg")';
+var BG2 = 'url("https://wallpapercave.com/wp/G48Pm1m.jpg")';
 
 var BG3 = 'url("https://images.freecreatives.com/wp-content/uploads/2016/03/Beautiful-Outer-Space-Background.jpg")';
 

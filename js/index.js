@@ -15,10 +15,21 @@ var nebulae = ["Butterfly",
 
 $( "#NebTab" ).on("click", function(){
   
-  
+  $("#content").empty();
   var random = Math.floor(Math.random() * nebulae.length);
    
   var path = "nebulae/" + nebulae[random] + ".jpg";
   console.log(path);
   document.getElementById("content").innerHTML = "<img id='NebIm' src='" + path + "'></img>";
+});
+
+$("#misc").on("click", function(){
+	$("#content").empty();
+	$(".hideL").clone().removeClass("hideL").appendTo("#content");
+	
+});
+
+$("#program").on("click", function(){
+	$("#content").empty();
+	
 });

@@ -1,26 +1,24 @@
+var nebulae = ["Butterfly", 
+"Cheeseburger", 
+"Crab", 
+"Eagle", 
+"Helix", 
+"Hourglass", 
+"Medusa", 
+"Orion", 
+"SoccerBall", 
+"Spaghetti", 
+"Statue_of_Liberty",
+"Twin",
+"Veil"];
 
 
-
-function downloads(){
+$( "#NebTab" ).on("click", function(){
   
-  if(typeof(Storage) !== "undefined") {
-        if (localStorage.downloads) {
-           localStorage.setItem("downloads", "Thank you for downloading Dyer Utililites")
-         
-        } else {
-            localStorage.downloads = " ";
-        }
-        document.getElementById("thanks").innerHTML = localStorage.downloads;
-    } else {
-     
-    } 
- 
-}
-
-function getThanks(){
-  if(typeof(Storage) !== "undefined") {
-    if(localStorage.downloads){
-      document.getElementById("thanks").innerHTML = localStorage.downloads;
-    }
-  }
-}
+  
+  var random = Math.floor(Math.random() * nebulae.length);
+   
+  var path = "nebulae/" + nebulae[random] + ".jpg";
+  console.log(path);
+  document.getElementById("content").innerHTML = "<img id='NebIm' src='" + path + "'></img>";
+});

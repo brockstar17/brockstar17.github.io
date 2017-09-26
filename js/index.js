@@ -1,4 +1,5 @@
-var nebulae = ["Butterfly", 
+var nebulae = [
+"Butterfly", 
 "Cheeseburger", 
 "Crab", 
 "Eagle", 
@@ -13,12 +14,20 @@ var nebulae = ["Butterfly",
 "Veil"];
 
 
+function getNebula(date){
+	if(date >= nebulae.length){
+		return getNebula(date - nebulae.length);
+	}
+	return date;
+}
+
 $( "#NebTab" ).on("click", function(){
   
   $("#content").empty();
-  var random = Math.floor(Math.random() * nebulae.length);
+  var d = new Date();
+  var val = getNebula(d.getDate());
    
-  var path = "nebulae/" + nebulae[random] + ".jpg";
+  var path = "nebulae/" + nebulae[val] + ".jpg";
   console.log(path);
   document.getElementById("content").innerHTML = "<img id='NebIm' src='" + path + "'></img>";
 });
@@ -31,5 +40,11 @@ $("#misc").on("click", function(){
 
 $("#program").on("click", function(){
 	$("#content").empty();
-	
+	$(".program").clone().removeClass("program").appendTo("#content");
+});
+
+$("#about").on("click", function(){
+	$("#content").empty();
+	$(".about").clone().removeClass("about").appendTo("#content");
+	$(".about2").clone().removeClass("about2").appendTo("#content");
 });

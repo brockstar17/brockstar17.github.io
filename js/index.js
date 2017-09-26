@@ -27,7 +27,7 @@ $( "#NebTab" ).on("click", function(){
   var d = new Date();
   var val = getNebula(d.getDate());
    
-  var path = "nebulae/" + nebulae[val] + ".jpg";
+  var path = "Nebulae/" + nebulae[val] + ".jpg";
   console.log(path);
   document.getElementById("content").innerHTML = "<img id='NebIm' src='" + path + "'></img>";
 });

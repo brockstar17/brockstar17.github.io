@@ -21,18 +21,17 @@ function getNebula(date){
 	return date;
 }
 
-window.onload = function(){
-	var d = new Date();
-	var val = getNebula(d.getDate());
-	var path = "nebulae/" + nebulae[val] + ".jpg";
-	$("#quickNeb").src = path;
-};
 
 $(document).ready(function(){
 	$(".logo").empty();
     $('.logo').typeIt({
         content : 'The Nebula'
     });
+	
+	var d = new Date();
+	var val = getNebula(d.getDate());
+	var path = "nebulae/" + nebulae[val] + ".jpg";
+	$("#quickNeb").src = path;
 });
 
 $( "#NebTab" ).on("click", function(){

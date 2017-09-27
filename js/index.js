@@ -21,6 +21,11 @@ function getNebula(date){
 	return date;
 }
 
+window.onload = function(){
+	var path = "nebulae/" + nebulae[val] + ".jpg";
+	$("#quickNeb").src = path;
+};
+
 $( "#NebTab" ).on("click", function(){
   
   $("#content").empty();

@@ -28,6 +28,13 @@ window.onload = function(){
 	$("#quickNeb").src = path;
 };
 
+$(document).ready(function(){
+	$(".logo").empty();
+    $('.logo').typeIt({
+        content : 'The Nebula'
+    });
+});
+
 $( "#NebTab" ).on("click", function(){
   
   $("#content").empty();
@@ -55,3 +62,5 @@ $("#about").on("click", function(){
 	$(".about").clone().removeClass("about").appendTo("#content");
 	$(".about2").clone().removeClass("about2").appendTo("#content");
 });
+
+

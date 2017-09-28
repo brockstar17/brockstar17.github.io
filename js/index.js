@@ -33,7 +33,6 @@ function animText(){
 
 $(document).ready(function(){
 	type(".logo", $(".logo").text());
-	setInterval(animText, 8000);
 	
 	var d = new Date();
 	var val = getNebula(d.getDate());

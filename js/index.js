@@ -21,18 +21,26 @@ function getNebula(date){
 	return date;
 }
 
+function type(elem, cont){
+	$(elem).typeIt({
+		content: cont
+	});
+}
+
+function animText(){
+	type(".logo", $(".logo").text());
+}
 
 $(document).ready(function(){
-	$(".logo").empty();
-    $('.logo').typeIt({
-        content : 'The Nebula'
-    });
+	type(".logo", $(".logo").text());
+	setInterval(animText, 8000);
 	
 	var d = new Date();
 	var val = getNebula(d.getDate());
 	var path = "nebulae/" + nebulae[val] + ".jpg";
 	$("#quickNeb").src = path;
 });
+
 
 $( "#NebTab" ).on("click", function(){
   
@@ -54,6 +62,7 @@ $("#misc").on("click", function(){
 $("#program").on("click", function(){
 	$("#content").empty();
 	$(".program").clone().removeClass("program").appendTo("#content");
+	
 });
 
 $("#about").on("click", function(){
@@ -61,5 +70,6 @@ $("#about").on("click", function(){
 	$(".about").clone().removeClass("about").appendTo("#content");
 	$(".about2").clone().removeClass("about2").appendTo("#content");
 });
+
 
 

@@ -1,0 +1,121 @@
+div {
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+.node-container {
+  position: absolute;
+}
+
+.node-container .node {
+  color: #008000;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
+.node-container .node:last-child {
+  color: white;
+  opacity: 0;
+}
+
+.node-container {
+  z-index: -1;
+}
+
+body {
+  background-color: black;
+}
+
+.accordion {
+  width: 30%;
+  margin: 0 auto;
+}
+.accordion ul {
+  list-style: none;
+  -webkit-perspective: 900;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordion ul li {
+  position: relative;
+  z-index: 1;
+  background: rgba(9, 198, 28, 0.03);
+  padding: 10px;
+  margin-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  color: white;
+  animation: flipdown 0.5s ease both;
+}
+.accordion ul li:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.accordion ul li:nth-of-type(2) {
+  animation-delay: 0.55s;
+}
+.accordion ul li:nth-of-type(3) {
+  animation-delay: 0.7s;
+}
+.accordion ul li:nth-of-type(4) {
+  animation-delay: 0.85s;
+}
+.accordion ul li:nth-of-type(5) {
+  animation-delay: 1s;
+}
+.accordion ul li:nth-of-type(6) {
+  animation-delay: 1.15s;
+}
+.accordion ul li:nth-of-type(7) {
+  animation-delay: 1.3s;
+}
+.accordion ul li:nth-of-type(8) {
+  animation-delay: 1.45s;
+}
+.accordion ul li:nth-of-type(9) {
+  animation-delay: 1.6s;
+}
+.accordion ul li:nth-of-type(10) {
+  animation-delay: 1.75s;
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.node-container {
+  position: fixed;
+}
+
+body {
+  overflow: visible;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
